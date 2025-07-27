@@ -18,17 +18,17 @@ def main():
         return
     
     print("🚀 株式データダッシュボードを起動しています...")
-    print("🌐 ブラウザで http://localhost:8501 が開きます")
-    print("⏹️  停止するには Ctrl+C を押してください")
-    print("-" * 50)
+    # print("🌐 ブラウザで http://localhost:8501 が開きます")
+    # print("⏹️  停止するには Ctrl+C を押してください")
+    # print("-" * 50)
     
     try:
         # Streamlitアプリを起動
         subprocess.run([
             sys.executable, "-m", "streamlit", "run", 
             "advanced_stock_dashboard.py",
-            "--server.port", "8501",
-            "--server.address", "localhost"
+            # "--server.port", "8501",
+            # "--server.address", "localhost"
         ])
     except KeyboardInterrupt:
         print("\n✅ ダッシュボードを停止しました。")
