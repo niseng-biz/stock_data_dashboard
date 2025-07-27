@@ -28,7 +28,7 @@ def main():
             sys.executable, "-m", "streamlit", "run", 
             "advanced_stock_dashboard.py",
             # "--server.port", "8501",
-            # "--server.address", "localhost"
+            "--server.address", "localhost"
         ])
     except KeyboardInterrupt:
         print("\n✅ ダッシュボードを停止しました。")
