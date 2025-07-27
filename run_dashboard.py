@@ -27,7 +27,7 @@ def main():
         subprocess.run([
             sys.executable, "-m", "streamlit", "run", 
             "advanced_stock_dashboard.py",
-            "--server.port", "8513",
+            "--server.port", "8501",
             "--server.address", "localhost"
         ])
     except KeyboardInterrupt:
